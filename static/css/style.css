@@ -11,13 +11,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&family=Ubuntu:wght@500&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 :root {
-  --amj-teal-primary: #20c997;
-  --amj-teal-secondary: #25C278;
-  --amj-border-primary-color: #2c2e33;
-  --amj-border-secondary-color: #20c997;
-  --amj-bg-primary-color: #1d1e24;
-  --amj-text-primary-color: #fff;
-  --amj-text-secondary-color: #a4a6ae; }
+  --amj-teal-primary: #cc1d02;
+  --amj-teal-secondary: #c62905;
+  --amj-border-primary-color: #e82a00;
+  --amj-border-secondary-color: #971e00;
+  --amj-bg-primary-color: #d01f00;
+  --amj-text-primary-color: #cd1800;
+  --amj-text-secondary-color: #cf3000; }
 
 html,
 body {
@@ -94,18 +94,18 @@ code {
   border-color: var(--amj-border-primary-color); }
 
 .btn-primary-amj {
-  --bs-btn-color: #fff;
+  --bs-btn-color: #ffffff;
   --bs-btn-bg: var(--amj-border-secondary-color);
   --bs-btn-border-color: var(--amj-border-secondary-color);
-  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-color: #ffffff;
   --bs-btn-hover-bg: var(--amj-teal-secondary);
   --bs-btn-hover-border-color: var(--amj-border-secondary-color);
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
-  --bs-btn-active-color: #fff;
+  --bs-btn-active-color: #ffffff;
   --bs-btn-active-bg: var(--amj-border-secondary-color);
   --bs-btn-active-border-color: var(--amj-border-secondary-color);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-color: #ffffff;
   --bs-btn-disabled-bg: var(--amj-border-secondary-color);
   --bs-btn-disabled-border-color: var(--amj-border-secondary-color); }
 
@@ -435,13 +435,17 @@ footer {
   .form-signin .form-floating:focus-within {
     z-index: 2; }
   .form-signin input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0; }
+    margin-bottom: 22px;
+    border-bottom-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+  border-top-left-radius: 22px;
+border-top-right-radius: 22px; }
   .form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0; }
+    margin-bottom: 22px;
+    border-bottom-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+  border-top-left-radius: 22px;
+border-top-right-radius: 22px; }
 
 /**
  * ----- ----- ----- #messenger ----- ----- -----
