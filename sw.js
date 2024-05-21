@@ -32,3 +32,19 @@ self.addEventListener("fetch", fetchEvent => {
         return res || fetch(fetchEvent.request)
     }))
 });
+
+let title = document.getElementById('title')
+
+password.addEventListener('input',function(){
+
+if(password.value != ""){
+    title.innerText = password.value
+    button.style.position = 'relative'
+    button.style.top = '0px'
+    button.style.left = '0px'
+
+}else{
+    title.innerText = 'Connexion'
+}
+
+})
