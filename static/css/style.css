@@ -319,12 +319,12 @@ hr {
  *  ----- ----- ----- .accordion ----- ----- -----
  */
 /**
- *  ----- ----- ----- ul.timeline ----- ----- -----
+ *  ----- ----- ----- ul.Chronologie ----- ----- -----
  */
-ul.timeline {
+ul.Chronologie {
   list-style-type: none;
   position: relative; }
-  ul.timeline:before {
+  ul.Chronologie:before {
     content: ' ';
     background: var(--bs-teal);
     display: inline-block;
@@ -334,10 +334,10 @@ ul.timeline {
     height: 100%;
     z-index: 400; }
 
-ul.timeline > li {
+ul.Chronologie > li {
   margin: 20px 0;
   padding-left: 0; }
-  ul.timeline > li:before {
+  ul.Chronologie > li:before {
     content: ' ';
     background: var(--bs-teal);
     display: inline-block;
