@@ -3458,8 +3458,8 @@ textarea.form-control.is-invalid {
 
 .btn:hover {
     color: var(--bs-btn-hover-color);
-    background-color: var(--bs-btn-hover-bg);
-    border-color: var(--bs-btn-hover-border-color)
+    background-color: rgb(183, 0, 0);
+    border-color: rgb(0, 0, 0)
 }
 
 .btn-check+.btn:hover {
