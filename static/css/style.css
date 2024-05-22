@@ -11,13 +11,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@300&family=Ubuntu:wght@500&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 :root {
-  --amj-teal-primary: #cc1d02;
-  --amj-teal-secondary: #c62905;
-  --amj-border-primary-color: #e82a00;
-  --amj-border-secondary-color: #971e00;
-  --amj-bg-primary-color: #d01f00;
-  --amj-text-primary-color: #cd1800;
-  --amj-text-secondary-color: #cf3000; }
+  --amj-teal-primary: #000000;
+  --amj-teal-secondary: #cf0000;
+  --amj-border-primary-color: #000000;
+  --amj-border-secondary-color: #090403;
+  --amj-bg-primary-color: #000000;
+  --amj-text-primary-color: #e9d2d2;
+  --amj-text-secondary-color: #d10b0b; }
 
 html,
 body {
@@ -436,26 +436,33 @@ footer {
     z-index: 2; }
   .form-signin input[type="email"] {
     margin-bottom: 22px;
-    border-bottom-right-radius: 22px;
-    border-bottom-left-radius: 22px;
-  border-top-left-radius: 22px;
-border-top-right-radius: 22px; }
+      border-bottom-right-radius: 22px;
+      border-bottom-left-radius: 22px;
+      border-top-left-radius: 22px;
+      border-top-right-radius: 22px;
+    }
   .form-signin input[type="password"] {
     margin-bottom: 22px;
-    border-bottom-right-radius: 22px;
-    border-bottom-left-radius: 22px;
-  border-top-left-radius: 22px;
-border-top-right-radius: 22px; }
+      border-bottom-right-radius: 22px;
+      border-bottom-left-radius: 22px;
+      border-top-left-radius: 22px;
+      border-top-right-radius: 22px;
+    }
 
 /**
  * ----- ----- ----- #messenger ----- ----- -----
  */
 #messenger .messengerList {
-  color: #fff !important; }
-  #messenger .messengerList .media .media-body h6 span {
-    color: #fff !important; }
-  #messenger .messengerList a:hover {
-    color: var(--amj-teal-primary) !important; }
+  color: #fff !important;
+}
+
+#messenger .messengerList .media .media-body h6 span {
+  color: #fff !important;
+}
+
+#messenger .messengerList a:hover {
+  color: var(--amj-teal-primary) !important;
+}
 
 /**
  * ----- ----- ----- ----- ----- ----- media screen > max-width ----- ----- ----- ----- ----- -----
@@ -595,3 +602,7 @@ border-top-right-radius: 22px; }
     display: none !important; } }
 
 /*# sourceMappingURL=style.css.map */
+.mb-4 {
+  width: calc(100% - 15px);
+}
+
