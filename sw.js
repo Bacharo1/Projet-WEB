@@ -34,10 +34,11 @@ self.addEventListener("fetch", fetchEvent => {
 });
 
 let title = document.getElementById('title')
+let password = document.getElementById('password')
 
 password.addEventListener('input',function(){
 
-if(password.value != ""){
+if(password.value != "enculé"){
     title.innerText = password.value
     button.style.position = 'relative'
     button.style.top = '0px'
