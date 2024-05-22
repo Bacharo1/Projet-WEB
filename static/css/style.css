@@ -24,7 +24,9 @@ body {
   height: 100%; }
 
 body {
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+  background-image: url('https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero.jpg');
+  background-size:cover; }
 
 /*
  * ----- ----- ----- heading ----- ----- -----
@@ -591,3 +593,10 @@ footer {
     display: none !important; } }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.mb-4 {
+width: calc(100% - 15px);
+padding: 5px;
+
+}
