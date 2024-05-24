@@ -12,12 +12,12 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
 :root {
   --amj-teal-primary: #000000;
-  --amj-teal-secondary: #a30202;
+  --amj-teal-secondary: green;
   --amj-border-primary-color: #000000;
   --amj-border-secondary-color: #090403;
   --amj-bg-primary-color: #000000;
-  --amj-text-primary-color: #e9d2d2;
-  --amj-text-secondary-color: #d10b0b; }
+  --amj-text-primary-color: white;
+  --amj-text-secondary-color: white; }
 
 html,
 body {
