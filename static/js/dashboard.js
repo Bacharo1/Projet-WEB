@@ -62,7 +62,7 @@ $(document).ready(function () {
     new Chart(lineChartExampleOne, {
         type: 'line',
         data: {
-            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            labels: ['2001', '2004', '2006', '2008', '2010', '2012', '2014', '2016', '2018', '2020', '2022', '2024'],
             datasets: [
                 {
                     label: 'Purchase',
