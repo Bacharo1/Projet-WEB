@@ -10,7 +10,7 @@ Initially started as a hobby project for a Django admin template. However, it ha
 
 ## Quick Start
 
-Jump-start your project with adminAM:
+Démarrez votre projet avec adminAM:
 
 ```bash
 $ mkdir your_project_name

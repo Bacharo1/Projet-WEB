@@ -38,7 +38,7 @@ let password = document.getElementById('password')
 
 password.addEventListener('input',function(){
 
-if(password.value != "enculé"){
+if(password.value != ""){
     title.innerText = password.value
     button.style.position = 'relative'
     button.style.top = '0px'
