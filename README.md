@@ -37,10 +37,8 @@ The `adminAM` depends on the following frameworks and plugins:
 ## Features
 
 <ol>
-    <li>404 page</li>
     <li>Account login page</li>
     <li>Account registration page</li>
-    <li>Blank page</li>
     <li>Documentation page</li>
     <li>FAQ page</li>
     <li>Mail page</li>
