@@ -17,6 +17,13 @@ $(document).ready(function () {
 
     // Generate an array of random colors
     const randomColors = subCategoryLabels.map(() => getRandomColor());
+    const subCategoryColors = [
+        'rgba(255, 99, 132, 0.6)',  // Couleur pour Category 1
+        'rgba(54, 162, 235, 0.6)',  // Couleur pour Category 2
+        'rgba(75, 192, 192, 0.6)',  // Couleur pour Category 3
+        'rgba(153, 102, 255, 0.6)' 
+    ];
+
 
     const barChart = document.getElementById('subCategoryChart');
     new Chart(barChart, {
@@ -26,7 +33,7 @@ $(document).ready(function () {
             datasets: [{
                 label: 'In million',
                 data: subCategoryExpenses,
-                backgroundColor: randomColors,  // Use the array of random colors
+                backgroundColor:subCategoryColors ,   // Use the array of random colors
                 borderWidth: 1
             }]
         },
