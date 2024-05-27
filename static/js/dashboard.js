@@ -65,7 +65,7 @@ $(document).ready(function () {
             labels: ['2001', '2004', '2006', '2008', '2010', '2012', '2014', '2016', '2018', '2020', '2022', '2024'],
             datasets: [
                 {
-                    label: 'Purchase',
+                    label: 'Achat',
                     data: [10000, 5000, 15000, 10000, 20000, 15000, 30000, 25000, 40000, 35000, 50000, 45000],
                     borderWidth: 1,
                     borderColor: "#9461fb",
@@ -76,7 +76,7 @@ $(document).ready(function () {
 
                 },
                 {
-                    label: 'Sales',
+                    label: 'Vente',
                     data: [15000, 10000, 20000, 15000, 25000, 20000, 35000, 30000, 45000, 40000, 55000, 50000],
                     borderWidth: 1,
                     borderColor: "#ffe484",
