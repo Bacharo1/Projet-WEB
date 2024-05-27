@@ -503,224 +503,38 @@
             </div>
           </div>
           <!-- canvasQChart ends -->
-
-          <!-- table -->
-          <div class="row mt-4 sm-pt-4">
-            <div class="col">
-              <div class="card">
-                <div class="card-header">
-                  <h6 class="my-2">Top 10 countries</h6>
+          <div class="container mt-5">
+            <h2>Ajouter un Pays</h2>
+            <form action="ajouter_pays.php" method="POST">
+                <div class="form-group">
+                    <label for="nom_pays">Nom du Pays:</label>
+                    <input type="text" class="form-control" id="nom_pays" name="nom_pays" required>
                 </div>
-                <div class="card-body table-responsive">
-                  <div class="table-responsive">
-                    <table class="table overflow-scroll table-hover">
-                      <thead>
-                        <tr>
-                          <th>Country</th>
-                          <th>Sales Vol</th>
-                          <th>Revenue</th>
-                          <th>Profit</th>
-                          <th>Profit margin</th>
-                          <th>Top product</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <!-- todo: country flag icons -->
-                          <td class="d-flex align-items-center">
-                            <img
-                              src="https://placehold.co/50x50.png"
-                              class="productImg me-2"
-                              alt=""
-                            />
-                            <a href="index.html#" class="text-white amj-a">
-                              Nepal
-                            </a>
-                          </td>
-                          <td>$1200M</td>
-                          <td>$50M</td>
-                          <td>$25M</td>
-                          <td>50%</td>
-                          <td>Mobile App Development Tools ($0.8M)</td>
-                        </tr>
-
-                        <tr>
-                          <!-- todo: country flag icons -->
-                          <td class="d-flex align-items-center">
-                            <img
-                              src="https://placehold.co/50x50.png"
-                              class="productImg me-2"
-                              alt=""
-                            />
-                            <a href="index.html#" class="text-white amj-a">
-                              China
-                            </a>
-                          </td>
-                          <td>$1000M</td>
-                          <td>$48M</td>
-                          <td>$22M</td>
-                          <td>45.83%</td>
-                          <td>Enterprise CRM Suite ($1.5M)</td>
-                        </tr>
-
-                        <tr>
-                          <!-- todo: country flag icons -->
-                          <td class="d-flex align-items-center">
-                            <img
-                              src="https://placehold.co/50x50.png"
-                              class="productImg me-2"
-                              alt=""
-                            />
-                            <a href="index.html#" class="text-white amj-a">
-                              Germany
-                            </a>
-                          </td>
-                          <td>$800M</td>
-                          <td>$35M</td>
-                          <td>$18M</td>
-                          <td>51.43%</td>
-                          <td>Blockchain Development Toolkit ($0.55M)</td>
-                        </tr>
-
-                        <tr>
-                          <!-- todo: country flag icons -->
-                          <td class="d-flex align-items-center">
-                            <img
-                              src="https://placehold.co/50x50.png"
-                              class="productImg me-2"
-                              alt=""
-                            />
-                            <a href="index.html#" class="text-white amj-a">
-                              United States
-                            </a>
-                          </td>
-                          <td>$750M</td>
-                          <td>$32M</td>
-                          <td>$15M</td>
-                          <td>46.88%</td>
-                          <td>Cybersecurity Suite ($0.9M)</td>
-                        </tr>
-
-                        <tr>
-                          <!-- todo: country flag icons -->
-                          <td class="d-flex align-items-center">
-                            <img
-                              src="https://placehold.co/50x50.png"
-                              class="productImg me-2"
-                              alt=""
-                            />
-                            <a href="index.html#" class="text-white amj-a">
-                              Brazil
-                            </a>
-                          </td>
-                          <td>$700M</td>
-                          <td>$30M</td>
-                          <td>$14M</td>
-                          <td>46.67%</td>
-                          <td>AI-powered Customer Support System ($0.75M)</td>
-                        </tr>
-
-                        <tr>
-                          <!-- todo: country flag icons -->
-                          <td class="d-flex align-items-center">
-                            <img
-                              src="https://placehold.co/50x50.png"
-                              class="productImg me-2"
-                              alt=""
-                            />
-                            <a href="index.html#" class="text-white amj-a">
-                              Japan
-                            </a>
-                          </td>
-                          <td>$650M</td>
-                          <td>$28M</td>
-                          <td>$13M</td>
-                          <td>46.43%</td>
-                          <td>Enterprise CRM Suite ($1.5M)</td>
-                        </tr>
-
-                        <tr>
-                          <!-- todo: country flag icons -->
-                          <td class="d-flex align-items-center">
-                            <img
-                              src="https://placehold.co/50x50.png"
-                              class="productImg me-2"
-                              alt=""
-                            />
-                            <a href="index.html#" class="text-white amj-a">
-                              United Kingdom
-                            </a>
-                          </td>
-                          <td>$600M</td>
-                          <td>$26M</td>
-                          <td>$12M</td>
-                          <td>46.15%</td>
-                          <td>Virtual Collaboration Platform ($0.6M)</td>
-                        </tr>
-
-                        <tr>
-                          <!-- todo: country flag icons -->
-                          <td class="d-flex align-items-center">
-                            <img
-                              src="https://placehold.co/50x50.png"
-                              class="productImg me-2"
-                              alt=""
-                            />
-                            <a href="index.html#" class="text-white amj-a">
-                              France
-                            </a>
-                          </td>
-                          <td>$550M</td>
-                          <td>$24M</td>
-                          <td>$11M</td>
-                          <td>45.83%</td>
-                          <td>Data Analytics Platform ($1M)</td>
-                        </tr>
-
-                        <tr>
-                          <!-- todo: country flag icons -->
-                          <td class="d-flex align-items-center">
-                            <img
-                              src="https://placehold.co/50x50.png"
-                              class="productImg me-2"
-                              alt=""
-                            />
-                            <a href="index.html#" class="text-white amj-a">
-                              Canada
-                            </a>
-                          </td>
-                          <td>$500M</td>
-                          <td>$22M</td>
-                          <td>$10M</td>
-                          <td>45.45%</td>
-                          <td>AI-powered Customer Support System ($0.75M)</td>
-                        </tr>
-
-                        <tr>
-                          <!-- todo: country flag icons -->
-                          <td class="d-flex align-items-center">
-                            <img
-                              src="https://placehold.co/50x50.png"
-                              class="productImg me-2"
-                              alt=""
-                            />
-                            <a href="index.html#" class="text-white amj-a">
-                              Australia
-                            </a>
-                          </td>
-                          <td>$450M</td>
-                          <td>$20M</td>
-                          <td>$9M</td>
-                          <td>45%</td>
-                          <td>ERP Solution for Small Businesses ($0.65M)</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                <div class="form-group">
+                    <label for="volume_ventes">Volume de Ventes:</label>
+                    <input type="number" class="form-control" id="volume_ventes" name="volume_ventes">
                 </div>
-              </div>
-            </div>
-          </div>
+                <div class="form-group">
+                    <label for="revenu">Revenu:</label>
+                    <input type="number" step="0.01" class="form-control" id="revenu" name="revenu">
+                </div>
+                <div class="form-group">
+                    <label for="profit">Profit:</label>
+                    <input type="number" step="0.01" class="form-control" id="profit" name="profit">
+                </div>
+                <div class="form-group">
+                    <label for="marge_profit">Marge de Profit:</label>
+                    <input type="text" class="form-control" id="marge_profit" name="marge_profit">
+                </div>
+                <div class="form-group">
+                    <label for="produit_principal">Produit Principal:</label>
+                    <input type="text" class="form-control" id="produit_principal" name="produit_principal">
+                </div>
+                <button type="submit" class="btn btn-primary">Ajouter</button>
+                <a href="afficher_pays.php" class="btn btn-primary">Voir les pays</a>
+            </form>
+        </div>
+
           <!-- table ends-->
 
           <!-- main_content ends -->
