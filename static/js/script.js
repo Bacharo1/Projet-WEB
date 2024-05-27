@@ -8,6 +8,49 @@ function getBaseUrl() {
 }
 
 
+document.getElementById('backupButton').addEventListener('click', () => {
+    fetch('http://localhost:3000/backup')
+        .then(response => response.json())
+        .then(data => {
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'backup.json';
+            a.click();
+            URL.revokeObjectURL(url);
+        })
+        .catch(err => alert('Error backing up tasks: ' + err));
+});
+
+document.getElementById('restoreButton').addEventListener('click', () => {
+    const fileInput = document.getElementById('restoreFile');
+    const file = fileInput.files[0];
+
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            const tasks = JSON.parse(event.target.result);
+            fetch('http://localhost:3000/restore', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ tasks })
+            })
+            .then(response => response.text())
+            .then(data => alert(data))
+            .catch(err => alert('Error restoring tasks: ' + err));
+        };
+        reader.readAsText(file);
+    } else {
+        alert('Please select a file to restore');
+    }
+});
+
+
+
+
 $(document).ready(function () {
     /**
      * For sidebarToggled
@@ -98,7 +141,7 @@ $(document).ready(function () {
         "CY": 22.75,
         "CZ": 195.23,
         "DK": 304.56,
-        "DJ": 1.14,
+        "DJ": 1000.14,
         "DM": 0.38,
         "DO": 50.87,
         "EC": 61.49,
